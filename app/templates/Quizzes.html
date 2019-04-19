@@ -1,0 +1,85 @@
+{% extends "layout.html" %} {% block content %}
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/quiz.js"></script>
+<h1 class="text-h2-lightblue">QUIZZES</h1>
+<div class="content" id="experiment-article-section-1-content">
+    <!--<p>This section will be updated soon.</p>	-->
+    <p>
+        <h2 class="text-h3-darkblue">QUESTION 1 </h2>
+        <div id="question_1">Question 1 loading</div>
+        <input type="radio" name="answer_1" value="1" />
+        <span id="answer1_string_1">Option 1</span><br>
+        <input type="radio" name="answer_1" value="2" />
+        <span id="answer2_string_1">Option 2</span><br>
+        <input type="radio" name="answer_1" value="3" />
+        <span id="answer3_string_1">Option 3</span><br>
+        <input type="radio" name="answer_1" value="4" />
+        <span id="answer4_string_1">Option 4</span><br>
+        <div id="QID1" hidden="hidden">QID</div>
+    </p>
+    <p>
+        <h2 class="text-h3-darkblue">QUESTION 2 </h2>
+        <div id="question_2">Question 2 loading</div>
+        <input type="radio" name="answer_2" value="1" />
+        <span id="answer1_string_2">Option 1</span><br>
+        <input type="radio" name="answer_2" value="2" />
+        <span id="answer2_string_2">Option 2</span><br>
+        <input type="radio" name="answer_2" value="3" />
+        <span id="answer3_string_2">Option 3</span><br>
+        <input type="radio" name="answer_2" value="4" />
+        <span id="answer4_string_2">Option 4</span><br>
+        <div id="QID2" hidden="hidden">QID</div>
+    </p>
+    <p>
+        <h2 class="text-h3-darkblue">QUESTION 3 </h2>
+        <div id="question_3">Question 3 loading</div>
+        <input type="radio" name="answer_3" value="1" />
+        <span id="answer1_string_3">Option 1</span><br>
+        <input type="radio" name="answer_3" value="2" />
+        <span id="answer2_string_3">Option 2</span><br>
+        <input type="radio" name="answer_3" value="3" />
+        <span id="answer3_string_3">Option 3</span><br>
+        <input type="radio" name="answer_3" value="4" />
+        <span id="answer4_string_3">Option 4</span><br>
+        <div id="QID3" hidden="hidden">QID</div>
+    </p>
+    <p>
+        <h2 class="text-h3-darkblue">QUESTION 4 </h2>
+        <div id="question_4">Question 4 loading</div>
+        <input type="radio" name="answer_4" value="1" />
+        <span id="answer1_string_4">Option 1</span><br>
+        <input type="radio" name="answer_4" value="2" />
+        <span id="answer2_string_4">Option 2</span><br>
+        <input type="radio" name="answer_4" value="3" />
+        <span id="answer3_string_4">Option 3</span><br>
+        <input type="radio" name="answer_4" value="4" />
+        <span id="answer4_string_4">Option 4</span><br>
+        <div id="QID4" hidden="hidden">QID</div>
+    </p>
+    <p>
+        <h2 class="text-h3-darkblue">QUESTION 5 </h2>
+        <div id="question_5">Question 5 loading</div>
+        <input type="radio" name="answer_5" value="1" />
+        <span id="answer1_string_5">Option 1</span><br>
+        <input type="radio" name="answer_5" value="2" />
+        <span id="answer2_string_5">Option 2</span><br>
+        <input type="radio" name="answer_5" value="3" />
+        <span id="answer3_string_5">Option 3</span><br>
+        <input type="radio" name="answer_5" value="4" />
+        <span id="answer4_string_5">Option 4</span><br>
+        <div id="QID5" hidden="hidden">QID</div>
+    </p>
+
+    <div align="center">
+        <button name="calculate" id="calculate">Grade Me!</button>
+        <button name="reset" id="reset">Reset!</button>
+    </div>
+
+    <p>
+        <h2 class="text-h3-darkblue">RESULTS </h2>
+        <p id="Mark">Your score: </p>
+        <p id="Correct">Questions answered correct: </p>
+    </p>
+</div>
+
+{% endblock %}

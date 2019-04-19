@@ -1,0 +1,129 @@
+{% extends "layout.html" %} {% block content %}
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/exp.js"></script>
+<h1 class="text-h2-lightblue">
+    EXPERIMENT
+</h1>
+<div class="content" id="experiment-article-section-4-content">
+    <hr>
+    <h2 class="text-h3-darkblue">
+        Testing Perfect Secrecy using Shannon's Theorem
+    </h2>
+    <hr>
+    <p>
+        Is the following encryption scheme perfectly secure? You can observe as many encrypted text and key pairs as you wish. Press "Next Plaintext" method to get more pairs.
+    </p>
+    <p>
+        Plaintext:
+        <input id="plainarea" name="plainarea" size="50" type="text" value="11101010" readonly="readonly">
+        <button id="next_plain_text">
+            Next Plaintext
+        </button>
+    </p>
+    <p>
+        Key:
+        <input id="key" name="key" size="50" type="text" value="01010100" readonly="readonly">
+        <button id="next_key">
+            Next Keytext
+        </button>
+    </p>
+    <p>
+        <button id="Encrypt1">
+            v Encryptv
+        </button>
+    </p>
+    <p>
+        Ciphertext:
+        <input id="cipherarea" name="cipherarea" size="50" type="text" value="01010100" readonly="readonly">
+    </p>
+    <p>
+        <input id="current_encryption" name="current_encryption" size="50" type="text" value="01110110" readonly="readonly" hidden="hidden">
+        <button id="Next_Encryption">
+            Next Encryption Scheme
+        </button>
+    </p>
+    <h2 class="text-h3-darkblue">
+        The encryption set is as follows:
+    </h2>
+    <p>
+        For all the possible pairs of plaintext of size 8, and the key given by you, we will provide you with the encrypted texts with the same encryption scheme. You can observe the input and try to break it.
+    </p>
+    <p>
+        Put your key here (between size 6 and 12):
+        <input id="user_key" name="user_key" size="50" type="text" value="01010100" maxlength="12">
+    </p>
+    <p>
+        <button id="gen_all_pairs">
+            Encrytion Set
+        </button>
+    </p>
+    <p>
+        Multiple tuples of &lt;Plaintext, Ciphertext&gt;:
+    </p>
+    <p>
+        <textarea cols="50" id="encryption_set" name="encryption_set" rows="8" style="resize: none;" readonly="readonly">
+</textarea>
+    </p>
+    <h2 class="text-h3-darkblue">
+        Is the given encryption scheme secure?
+        <select id="yesno">
+            <option value = "yes">
+                Yes
+            </option>
+            <option value = "no">
+                No
+            </option>
+        </select>
+    </h2>
+    <p>
+        If not, give two plaintexts 'm1' and 'm2' for the above key such that Encryption(m1) = Encryption(m2):
+    </p>
+    <p>
+        m1:
+        <input id="m1" name="m1" size="50" type="text" value="" maxlength="8">
+    </p>
+    <p>
+        m2:
+        <input id="m2" name="m2" size="50" type="text" value="" maxlength="8">
+    </p>
+    <p>
+        <button id="checkAnswer">
+            Check Answer!!
+        </button>
+    </p>
+    <p>
+        RESULT:
+        <input id="results" name="results" size="50" type="text" value="" readonly="readonly" style="border: 0; outline:none">
+    </p>
+    <hr>
+    <h2 class="text-h3-darkblue">
+        SIMULATION
+    </h2>
+    <hr>
+    <p>
+        Plaintext =
+        <input id="simulation_plainarea" name="simulation_plainarea" size="50" type="text" value="10010011000110">
+    </p>
+    <p>
+        Key =
+        <input id="simulation_key" name="simulation_key" maxchars="25" size="50" type="text" value="10101100110001">
+    </p>
+    <p>
+        <button id="simulation_key_generator">
+            Generate Random Key
+        </button>
+    </p>
+    <p>
+        <button id="simulation_encrypt">
+            v Encrypt v
+        </button>
+        <button id="simulation_decrypt">
+            ^ Decrypt ^
+        </button>
+    </p>
+    <p>
+        Ciphertext =
+        <input id="simulation_cipherarea" name="simulation_cipherarea" size="50" type="text" value="">
+    </p>
+</div>
+{% endblock %}
