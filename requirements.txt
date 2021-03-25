@@ -130,7 +130,7 @@ python3-xlib==0.15
 PyTweening==1.0.3
 pytz==2019.1
 pyxdg==0.25
-PyYAML==5.1
+PyYAML==5.4
 pyzmq==18.0.1
 qtconsole==4.4.3
 reportlab==3.5.6
