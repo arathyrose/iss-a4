@@ -70,7 +70,7 @@ logilab-common==1.4.1
 louis==3.6.0
 lxml==4.3.3
 macaroonbakery==1.1.4
-Mako==1.0.7
+Mako==1.2.2
 MarkupSafe==1.1.1
 mccabe==0.6.1
 mistune==0.8.4
